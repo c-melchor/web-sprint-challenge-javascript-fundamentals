@@ -23,10 +23,8 @@ The zoos want to display both the scientific name and the animal name in front o
 
 console.log('****** TASK 1 *******');
 const displayNames = [];
-zooAnimals.forEach(function(item){
-displayNames.push(`Name: ${item.animal_name}, Scientific: ${item.scientific_name}`);
 
-});
+zooAnimals.forEach(item => displayNames.push(`Name: ${item.animal_name}, Scientific: ${item.scientific_name}`));
 
 console.log(displayNames);
 
@@ -67,9 +65,8 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 console.log('*******TASK 4***********');
-let populationTotal = zooAnimals.reduce(function(acc, counter){
-  return acc + counter.population;
-},0);
+
+let populationTotal = zooAnimals.reduce((acc, counter) => acc + counter.population, 0);
 
   
 console.log(populationTotal);
@@ -123,7 +120,7 @@ const multiply = function(a,b){
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 
-console.log('*******TASK 6***********');
+console.log('*******TASK 7***********');
 
 
 console.log(consume(2, 2, add)); // 4
@@ -138,4 +135,6 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
+
+//  strech done
 
