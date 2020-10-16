@@ -1,7 +1,7 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
 
-
+// PROTOTYPE CODE BELOW************************************************
 
 // function CuboidMaker(length, width, height){
 //     this.length = length;
@@ -26,6 +26,8 @@
 //   function cuboidObj(length, width, height){
 //     CuboidMaker.call(this, length, width, height);
 //   }  
+//******************** */END OF PROTOTYPE CODE******************************************
+
 
   class CuboidMaker {
       constructor(length, width, height){

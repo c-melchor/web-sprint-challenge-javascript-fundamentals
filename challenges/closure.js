@@ -17,6 +17,7 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
+
 //nested function can access the variable 'internal' because it is receiving it from a function above it. 
 //Variables can be passed DOWN but cannot be passed up.
 
@@ -24,12 +25,12 @@ myFunction();
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
-// console.log('counter task*************');
-// function summation(num){
-//   let i = 1;
-//   while (i <=num){
-//   i ++;
-//   }
-//   return i;
-// }
-// console.log(summation(4));
+console.log('********** counter task *************');
+function summation(num){
+  let total = 0;
+ for(let i = 0 ; i <= num; i ++){
+  total += i;
+ }
+ return total;
+}
+console.log(summation(4));
