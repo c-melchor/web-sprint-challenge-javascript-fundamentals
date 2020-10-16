@@ -42,32 +42,35 @@ console.log('TESTING TESTING');
 The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
 
 */
-// let item = zooAnimals;
+console.log('*******TASK 2***********');
+let item = zooAnimals;
 
-// const lowCaseAnimalNames = zooAnimals.map(function(item, index){
-//   return item.toLowerCase();
-// });
-
-// console.log(lowCaseAnimalNames);
+const lowCaseAnimalNames = zooAnimals.map( item => item.animal_name.toLowerCase())
+console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
 
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-
-const lowPopulationAnimals = zooAnimals.filter(function(item){
-  return item < 5});
+console.log('*******TASK 3***********');
+const lowPopulationAnimals = zooAnimals.filter(item => item.population < 5);
 
 console.log(lowPopulationAnimals);
-console.log('hi')
 
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-// let populationTotal = 0;
+console.log('*******TASK 4***********');
+// let populationTotal = zooAnimals.reduce(function(acc, counter, index){
+//   if(zooAnimals[index] === 1){
+//   return acc += counter
+// }
+// });
+
+  
 // console.log(populationTotal);
 
 
@@ -80,6 +83,21 @@ The zoos need to know their total animal population across the United States. Fi
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 
+console.log('*******TASK 5***********');
+
+
+
+function consume(a, b, cb){
+  return cb(a,b);
+}
+
+const nameHere = function(a,b){
+  return `Hello ${a}, ${b} this is working!`;
+}
+
+console.log(consume('Christina', 'Happy Friday,', nameHere));
+
+
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -87,11 +105,29 @@ The zoos need to know their total animal population across the United States. Fi
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
+console.log('*******TASK 6***********');
+
+const add = function(a,b){
+  return a + b;
+}
+console.log(consume(13,24, add));
+
+const multiply = function(a,b){
+  return a * b;
+}
+ const greeting = function(firstName,lastName){
+   return `Hello ${firstName} ${lastName}, nice to meet you!`
+ }
+
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+
+console.log('*******TASK 6***********');
+
+
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
