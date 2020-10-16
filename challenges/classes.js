@@ -41,12 +41,6 @@
       }
   }
 
-   class Cuboid extends CuboidMaker {
-       constructor(length,width,height){
-           super(length, width, height);
-       }
-   }
-
 
   let cuboid = new CuboidMaker(4,5,5);
 
