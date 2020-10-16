@@ -17,6 +17,8 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
+//nested function can access the variable 'internal' because it is receiving it from a function above it. 
+//Variables can be passed DOWN but cannot be passed up.
 
 
 /* Task 2: Counter */
